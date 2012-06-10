@@ -11,8 +11,8 @@ other contributers:
 
 from django import forms
 from django.utils.translation import ugettext, ugettext_lazy as _
-from messages.fields import *
-from permissions.models import *
+from permissions.fields import CommaSeparatedUserField
+from permissions.models import Permission, VISIBILITY, PROTECTION
 
 class PermissionForm(forms.Form):
     """
